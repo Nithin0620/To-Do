@@ -36,9 +36,6 @@ function App() {
               handleItems();
             }
           }}  
-
-
-
           
           onChange={handleText}
           value={text}
@@ -46,6 +43,12 @@ function App() {
         />
         <button
           onClick={handleItems}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleItems();
+            }
+          }}  
+
           className="bg-yellow-50 text-cyan-800 font-bold rounded ml-2 pl-4 pr-4 p-2"
         >
           Add Item
