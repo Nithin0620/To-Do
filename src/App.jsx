@@ -35,7 +35,11 @@ function App() {
             if (e.key === "Enter") {
               handleItems();
             }
-          }}
+          }}  
+
+
+
+          
           onChange={handleText}
           value={text}
           className="w-[350px] bg-transparent text-white text-xl placeholder:text-slate-400 text-slate-700 text-lg border-none rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300  focus:shadow-[0px_0px_15px_24px_rgba(236,_72,_153,_0.15)] "
